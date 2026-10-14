@@ -306,6 +306,9 @@
   .p-2 {
     padding: calc(var(--spacing) * 2);
   }
+  .p-3 {
+    padding: calc(var(--spacing) * 3);
+  }
   .p-5 {
     padding: calc(var(--spacing) * 5);
   }
@@ -347,6 +350,9 @@
   }
   .text-\[\#194D45\] {
     color: #194D45;
+  }
+  .text-\[\#\] {
+    color: #;
   }
   .text-blue-600 {
     color: var(--color-blue-600);
