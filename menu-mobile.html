@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu mobile - Marchica Trips</title>
+    <link rel="stylesheet" href="src/output.css">
+</head>
+<body>
+    <header class="relative flex items-center justify-between bg-[#194D45] p-5">
+        <img src="images/logo.png" alt="logo Marchica" width="80" height="80">
+
+        <details class="group md:hidden">
+            <summary aria-label="Ouvrir ou fermer le menu"
+                     class="cursor-pointer list-none text-3xl text-white focus-visible:outline-2 focus-visible:outline-offset-2">
+                <span aria-hidden="true" class="group-open:hidden">☰</span>
+                <span aria-hidden="true" class="hidden group-open:inline">✕</span>
+            </summary>
+
+            <nav aria-label="Navigation principale"
+                 class="absolute inset-x-0 top-full z-10 flex flex-col bg-white p-4">
+                <a href="" class="flex items-center justify-between py-3 font-semibold text-black">
+                  Accueil
+                <span aria-hidden="true">&gt;</span>
+                </a>
+                <a href="" class="flex items-center justify-between py-3 font-semibold text-black">
+                  Activités
+                <span aria-hidden="true">&gt;</span>
+                </a>
+                <a href="" class="flex items-center justify-between py-3 font-semibold text-black">
+                  FAQ
+                <span aria-hidden="true">&gt;</span>
+                </a>
+             <a href="" class="flex items-center justify-between py-3 text-xl font-bold text-[#194D45]">
+               Réserver
+             <span aria-hidden="true">&gt;</span>
+            </a>
+            </nav>
+        </details>
+    </header>
+</body>
+</html>
