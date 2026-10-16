@@ -7,21 +7,48 @@
     <link rel="stylesheet" href="src/output.css">
 </head>
 <body>
-      <header class="flex justify-between items-center p-5 bg-[#194D45]">
-        <div>
-            <img src="images/logo.png" alt="logo Marchica" width="80" height="80">
-        </div>
-        <div class="flex gap-20 text-white">
-            <a href="index.html">Acceuil</a>
-            <a href="activity.html">Activites</a>
-            <a href="faq.html">FAQ</a>
-        </div>
-        <div>
-            <button class="bg-black text-white p-2 rounded-xl">
-                Reserver
-            </button>
-        </div>
-    </header>
+
+  
+<header class="fixed w-full top-0 z-50 flex items-center justify-between bg-[#194D45] px-4 py-2 ">
+
+  <div class="flex items-center gap-2">
+    <img src="images/logo.png" alt="Logo Marchica Trips" width="100" height="100">
+    <span class="hidden text-lg font-bold tracking-wide text-white sm:block">
+      Marchica Trips
+    </span>
+  </div>
+  <nav aria-label="Navigation desktop" class="hidden sm:flex items-center gap-6 text-sm text-white">
+    <a href="index.html" class="hover:text-accent transition-colors">Accueil</a>
+    <a href="activity.html" class="hover:text-accent transition-colors">Activités</a>
+    <a href="faq.html" class="hover:text-accent transition-colors">FAQ</a>
+    <a href="reservation.html"
+       class="rounded-full bg-accent px-5 py-2 font-semibold text-[#194D45] transition-colors hover:bg-white">
+      Réservation
+    </a>
+  </nav>
+
+  <details class="group relative sm:hidden">
+    <summary
+      aria-label="Ouvrir ou fermer le menu"
+      class="grid h-10 w-10 cursor-pointer list-none place-items-center text-3xl text-white focus-visible:outline-2 focus-visible:outline-white">
+      <span aria-hidden="true" class="relative inset-0 grid place-items-center group-open:hidden">☰</span>
+      <span aria-hidden="true" class="relative inset-0 hidden place-items-center group-open:inline">✕</span>
+    </summary>
+    <nav aria-label="Navigation mobile"
+         class="absolute right-0  mt-3 flex flex-col items-start gap-4 rounded bg-[#194D45] p-5 text-sm text-white ">
+      <a href="index.html" class="hover:text-accent transition-colors">Accueil</a>
+      <a href="activity.html" class="hover:text-accent transition-colors">Activités</a>
+      <a href="faq.html" class="hover:text-accent transition-colors">FAQ</a>
+      <a href="reservation.html"
+         class="rounded-full bg-accent px-5 py-2 font-semibold text-[#194D45] transition-colors hover:bg-white">
+        Réservation
+      </a>
+    </nav>
+  </details>
+</header>
+
+
+    
     <main>
         <section class="relative overflow-hidden ">
             <img src="images/Vieo.jpg" alt="" class="absolute inset-0 h-full w-full object-cover">

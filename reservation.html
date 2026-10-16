@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Réserver votre activité</title>
+  <link rel="stylesheet" href="./src/output.css">
+
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+  
+
+<header class="fixed w-full top-0 z-50 flex items-center justify-between bg-[#194D45] px-4 py-2 ">
+
+  <div class="flex items-center gap-2">
+    <img src="images/logo.png" alt="Logo Marchica Trips" width="100" height="100">
+    <span class="hidden text-lg font-bold tracking-wide text-white sm:block">
+      Marchica Trips
+    </span>
+  </div>
+  <nav aria-label="Navigation desktop" class="hidden sm:flex items-center gap-6 text-sm text-white">
+    <a href="index.html" class="hover:text-accent transition-colors">Accueil</a>
+    <a href="activity.html" class="hover:text-accent transition-colors">Activités</a>
+    <a href="faq.html" class="hover:text-accent transition-colors">FAQ</a>
+    <a href="reservation.html"
+       class="rounded-full bg-accent px-5 py-2 font-semibold text-[#194D45] transition-colors hover:bg-white">
+      Réservation
+    </a>
+  </nav>
+
+  <details class="group relative sm:hidden">
+    <summary
+      aria-label="Ouvrir ou fermer le menu"
+      class="grid h-10 w-10 cursor-pointer list-none place-items-center text-3xl text-white focus-visible:outline-2 focus-visible:outline-white">
+      <span aria-hidden="true" class="relative inset-0 grid place-items-center group-open:hidden">☰</span>
+      <span aria-hidden="true" class="relative inset-0 hidden place-items-center group-open:inline">✕</span>
+    </summary>
+    <nav aria-label="Navigation mobile"
+         class="absolute right-0  mt-3 flex flex-col items-start gap-4 rounded bg-[#194D45] p-5 text-sm text-white ">
+      <a href="index.html" class="hover:text-accent transition-colors">Accueil</a>
+      <a href="activity.html" class="hover:text-accent transition-colors">Activités</a>
+      <a href="faq.html" class="hover:text-accent transition-colors">FAQ</a>
+      <a href="reservation.html"
+         class="rounded-full bg-accent px-5 py-2 font-semibold text-[#194D45] transition-colors hover:bg-white">
+        Réservation
+      </a>
+    </nav>
+  </details>
+</header>
+
+    
+
+  <main class="max-w-6xl mx-auto px-5 sm:px-8 py-12 sm:py-16" id="reservation">
+    <section class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 sm:p-5 ">
+        <h2 class="text-sm font-semibold uppercase tracking-wide text-primary mb-5">
+          Activité sélectionnée
+        </h2>
+
+        <div class="rounded-md overflow-hidden mb-8">
+          <img src="images/image.png" alt="Image de l'activité sélectionnée" class="w-full sm:h-[300px] object-cover">
+        </div>
+
+        <div>
+          <h2 class="text-xl font-semibold text-gray-900 mb-5">Pourquoi réserver avec nous ?</h2>
+
+          <div class="flex flex-col gap-5">
+            <div class="flex items-start gap-4">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"
+                class="shrink-0">
+                <rect width="40" height="40" rx="8" fill="#E1EEEA" />
+                <path
+                  d="M15.8333 19.1666V15.833C15.8333 14.7279 16.2723 13.668 17.0537 12.8865C17.8351 12.105 18.8949 11.666 20 11.666C21.1051 11.666 22.1649 12.105 22.9463 12.8865C23.7277 13.668 24.1667 14.7279 24.1667 15.833V19.1666M14.1667 19.1666H25.8333C26.7538 19.1666 27.5 19.9129 27.5 20.8334V26.6672C27.5 27.5878 26.7538 28.334 25.8333 28.334H14.1667C13.2462 28.334 12.5 27.5878 12.5 26.6672V20.8334C12.5 19.9129 13.2462 19.1666 14.1667 19.1666Z"
+                  stroke="#184F46" stroke-width="2" stroke-linecap="round" />
+              </svg>
+              <div>
+                <h3 class="font-semibold text-gray-900">Paiement sécurisé</h3>
+                <p class="text-sm text-gray-500 mt-0.5">Vos informations sont protégées.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"
+                class="shrink-0">
+                <rect width="40" height="40" rx="8" fill="#E1EEEA" />
+                <path
+                  d="M28.334 15.8337L20.8409 20.6058C20.5866 20.7534 20.2978 20.8312 20.0038 20.8312C19.7097 20.8312 19.4209 20.7534 19.1666 20.6058L11.666 15.8337M13.3328 13.334H26.6672C27.5878 13.334 28.334 14.0801 28.334 15.0005V24.9995C28.334 25.9199 27.5878 26.666 26.6672 26.666H13.3328C12.4123 26.666 11.666 25.9199 11.666 24.9995V15.0005C11.666 14.0801 12.4123 13.334 13.3328 13.334Z"
+                  stroke="#184F46" stroke-width="2" stroke-linecap="round" />
+              </svg>
+              <div>
+                <h3 class="font-semibold text-gray-900">Confirmation immédiate</h3>
+                <p class="text-sm text-gray-500 mt-0.5">Vous recevrez un email de confirmation.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"
+                class="shrink-0">
+                <rect width="40" height="40" rx="8" fill="#E1EEEA" />
+                <path
+                  d="M12.5 21.6667H15C15.442 21.6667 15.866 21.8423 16.1785 22.1548C16.4911 22.4674 16.6667 22.8913 16.6667 23.3333V25.8333C16.6667 26.2754 16.4911 26.6993 16.1785 27.0118C15.866 27.3244 15.442 27.5 15 27.5H14.1667C13.7246 27.5 13.3007 27.3244 12.9882 27.0118C12.6756 26.6993 12.5 26.2754 12.5 25.8333V20C12.5 18.0109 13.2902 16.1032 14.6967 14.6967C16.1032 13.2902 18.0109 12.5 20 12.5C21.9891 12.5 23.8968 13.2902 25.3033 14.6967C26.7098 16.1032 27.5 18.0109 27.5 20V25.8333C27.5 26.2754 27.3244 26.6993 27.0118 27.0118C26.6993 27.3244 26.2754 27.5 25.8333 27.5H25C24.558 27.5 24.134 27.3244 23.8215 27.0118C23.5089 26.6993 23.3333 26.2754 23.3333 25.8333V23.3333C23.3333 22.8913 23.5089 22.4674 23.8215 22.1548C24.134 21.8423 24.558 21.6667 25 21.6667H27.5"
+                  stroke="#184F46" stroke-width="2" stroke-linecap="round" />
+              </svg>
+              <div>
+                <h3 class="font-semibold text-gray-900">Service client</h3>
+                <p class="text-sm text-gray-500 mt-0.5">Une équipe disponible pour vous aider.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 sm:p-8">
+        <h1 class="text-2xl sm:text-3xl font-bold text-gray-900">Réserver votre activité</h1>
+        <p class="text-gray-500 mt-2 mb-6">
+          Remplissez le formulaire ci-dessous pour réserver votre expérience.
+        </p>
+
+        <form action="" method="POST" class="flex flex-col gap-4">
+          <div class="flex flex-col gap-1.5">
+            <label for="activite" class="text-sm font-medium text-gray-700">Activité *</label>
+            <select name="activite" id="activite" required
+              class="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm text-gray-700 focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary bg-white">
+              <option value="" selected disabled>Choisissez une activité</option>
+              <option value="kayak">Kayak</option>
+              <option value="bateau">Balade en bateau</option>
+              <option value="randonnee">Randonnée au Gourougou</option>
+              <option value="cuisine">Découverte culinaire</option>
+            </select>
+          </div>
+
+          <div class="flex flex-col gap-1.5">
+            <label for="date" class="text-sm font-medium text-gray-700">Date souhaitée *</label>
+            <input type="date" name="date" id="date" required
+              class="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm text-gray-700 focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary">
+          </div>
+
+          <div class="flex flex-col gap-1.5">
+            <label for="participants" class="text-sm font-medium text-gray-700">Nombre de participants *</label>
+            <select name="participants" id="participants" required
+              class="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm text-gray-700 focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary bg-white">
+              <option value="" selected disabled>Choisissez le nombre de participants</option>
+              <option value="1">1 participant</option>
+              <option value="2">2 participants</option>
+              <option value="3">3 participants</option>
+              <option value="4">4 participants</option>
+              <option value="5">5 participants</option>
+              <option value="6">6 participants</option>
+            </select>
+          </div>
+
+          <div class="flex flex-col gap-1.5">
+            <label for="nom" class="text-sm font-medium text-gray-700">Nom *</label>
+            <input type="text" name="nom" id="nom" placeholder="Votre nom" autocomplete="name" required
+              class="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm text-gray-700 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary">
+          </div>
+
+          <div class="flex flex-col gap-1.5">
+            <label for="email" class="text-sm font-medium text-gray-700">Email *</label>
+            <input type="email" name="email" id="email" placeholder="Votre adresse email" autocomplete="email" required
+              class="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm text-gray-700 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary">
+          </div>
+
+          <div class="flex flex-col gap-1.5">
+            <label for="telephone" class="text-sm font-medium text-gray-700">Téléphone *</label>
+            <input type="tel" name="telephone" id="telephone" placeholder="+212 6 12 34 56 78" autocomplete="tel"
+              required
+              class="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm text-gray-700 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary">
+          </div>
+
+          <div class="flex items-start gap-2 mt-1">
+            <input type="checkbox" name="conditions" id="conditions" required
+              class="mt-1 h-4 w-4 rounded border-gray-300 text-primary focus:ring-primary">
+            <label for="conditions" class="text-sm text-gray-600">
+              J'accepte les conditions générales de vente *
+            </label>
+          </div>
+
+          <button type="submit"
+            class="mt-2 w-full sm:w-auto self-start inline-flex items-center justify-center gap-2 bg-primary text-white font-medium px-6 py-3 rounded-xl hover:bg-primary-dark transition-colors">
+            Valider la réservation →
+          </button>
+        </form>
+      </div>
+
+    </section>
+  </main>
+
+  <footer class="bg-primary text-white mt-10 w-full">
+    <div class="max-w-6xl mx-auto px-6 sm:px-10 py-12">
+      <div class="grid grid-cols-1 p-0  sm:grid.row gap-10 sm:grid-cols-1 lg:grid-cols-4">
+        <div>
+          <h2 class="text-accent text-2xl font-bold ">Marchica Trips</h2>
+          <p class="mt-3 text-sm leading-6 text-white/80">
+            Découvrez la beauté de la lagune de Marchica et explorez des activités inoubliables à Nador.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="text-lg font-semibold">Nos activités</h3>
+          <ul class="mt-4 space-y-3 text-sm text-white/80">
+            <li>Kayak</li>
+            <li>Balades en bateau</li>
+            <li>Randonnée au Gourougou</li>
+            <li>Découverte culinaire</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold">Contactez-nous</h3>
+          <ul class="mt-4 space-y-3 text-sm text-white/80">
+            <li>Nador, Maroc</li>
+            <li>
+              <a href="mailto:contact@marchicatrips.com" class="hover:text-accent">
+                Nous écrire
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mt-10 border-t border-white/20 pt-6 text-sm text-white/70">
+        <p>&copy; 2026 Marchica Trips. Tous droits réservés.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
