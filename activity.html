@@ -1,333 +1,248 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <style>
-        * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #f3ead8;
-  color: #222;
-}
-
-a {
-  text-decoration: none;
-}
-
-/* ---------- HEADER ---------- */
-.header {
-  background-color: #1f4d44;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 50px;
-}
-
-.logo {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  background-color: #fff;
-  object-fit: cover;
-}
-
-.nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 60px;
-}
-
-.nav a {
-  color: #fff;
-  font-weight: bold;
-  font-size: 15px;
-}
-
-.btn-reserver {
-  background-color: #2e211a;
-  color: #fff;
-  font-weight: bold;
-  padding: 14px 32px;
-  border-radius: 6px;
-}
-
-/* ---------- MAIN ---------- */
-.main {
-  padding: 0 0 30px;   
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-}
-
-/* Banniere */
-.hero {
-  width: 100%;
-  max-width: none;     
-  height: 160px;
-  border-radius: 0;       
-  overflow: hidden;
-  background-color: #7aa6b3;
-}
-.hero img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-/* Cartes */
-.cards {
-  width: 100%;
-  max-width: 1100px;
-  padding: 0 20px;        
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
-
-.card {
-  width: 23%;
-  min-width: 220px;
-  background-color: #f5f5f5;
-  border-radius: 12px;
-  overflow: hidden;
-  padding-bottom: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.card img {
-  width: 100%;
-  height: 130px;
-  object-fit: cover;
-  display: block;
-  background-color: #bbb;
-}
-
-.card h3 {
-  font-size: 15px;
-  margin: 18px 16px 6px;
-}
-
-.card p {
-  font-size: 12px;
-  font-style: italic;
-  color: #666;
-  margin: 0 16px 16px;
-  flex-grow: 1;
-}
-
-.btn-more {
-  background-color: #6b6b6b;
-  color: #fff;
-  font-size: 12px;
-  font-weight: bold;
-  padding: 8px 18px;
-  border-radius: 20px;
-  margin-left: 16px;
-}
-
-/* ---------- FOOTER ---------- */
-.footer {
-  background-color: #dcdcdc;
-  padding: 25px 50px;
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
-  font-size: 12px;
-  color: #555;
-  border-radius: 20px 20px 0 0;
-}
-
-.footer-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.footer-legal {
-  display: flex;
-  gap: 25px;
-}
-
-.footer-legal a {
-  color: #555;
-}
-
-.footer-bottom {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-}
-
-.footer-brand h4 {
-  color: #d9730d;
-  font-size: 17px;
-  margin-bottom: 8px;
-}
-
-.footer-nav {
-  display: flex;
-  align-items: center;
-  gap: 30px;
-}
-
-.footer-nav a {
-  color: #222;
-  font-weight: bold;
-}
-
-/* ---------- RESPONSIVE ---------- */
-@media (max-width: 800px) {
-  .header {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .nav {
-    gap: 25px;
-  }
-
-  .card {
-    width: 45%;
-  }
-
-  .footer-top,
-  .footer-bottom {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 15px;
-  }
-}
-    </style>
-    <!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Marchica Trips</title>
-  <link rel="stylesheet" href="activity.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marchica Trips</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
 
-  <!-- HEADER -->
-  <header class="header">
-    <img class="logo" src="images/logo.png" alt="Logo Marchica Trips">
-    <nav class="nav">
-      <a href="index.html">Accueil</a>
-      <a href="activity.html">Activités</a>
-      <a href="faq.html">FAQ</a>
-    </nav>
-    <a href="#" class="btn-reserver">Réserver</a>
-  </header>
-
-  <main class="main">
-
-    <!-- BANNIERE -->
-    <section class="hero">
-      <img src="images/Vieo.jpg" alt="Lagune de Marchica">
-    </section>
-
-    <!-- CARTES -->
-    <section class="cards">
-
-      <article class="card">
-        <img src="images/kayak.jpg" alt="Kayak">
-        <h3>Kayak</h3>
-        <p>Explorez la lagune à votre rythme.</p>
-        <a href="#" class="btn-more">En savoir plus</a>
-      </article>
-
-      <article class="card">
-        <img src="images/bateau.jpg" alt="Balade en bateau">
-        <h3>Balade en bateau</h3>
-        <p>Admirez la lagune et ses îles.</p>
-        <a href="#" class="btn-more">En savoir plus</a>
-      </article>
-
-      <article class="card">
-        <img src="images/gourougou.jpg" alt="Randonnée au Gourougou">
-        <h3>Randonnée au Gourougou</h3>
-        <p>Un panorama exceptionnel sur la région.</p>
-        <a href="#" class="btn-more">En savoir plus</a>
-      </article>
-
-      <article class="card">
-        <img src="images/culinaire.jpg" alt="Découverte culinaire">
-        <h3>Découverte culinaire</h3>
-        <p>Savourez les spécialités locales.</p>
-        <a href="#" class="btn-more">En savoir plus</a>
-      </article>
-
-      <article class="card">
-        <img src="images/oiseaux.jpg" alt="Observation des oiseaux">
-        <h3>Observation des oiseaux</h3>
-        <p>Une faune et une flore préservées.</p>
-        <a href="#" class="btn-more">En savoir plus</a>
-      </article>
-
-      <article class="card">
-        <img src="images/peche.jpg" alt="Pêche traditionnelle">
-        <h3>Pêche traditionnelle</h3>
-        <p>Vivez une expérience locale authentique.</p>
-        <a href="#" class="btn-more">En savoir plus</a>
-      </article>
-
-      <article class="card">
-        <img src="images/nador.jpg" alt="Visite de Nador">
-        <h3>Visite de Nador</h3>
-        <p>Culture, histoire et patrimoine.</p>
-        <a href="#" class="btn-more">En savoir plus</a>
-      </article>
-
-      <article class="card">
-        <img src="images/baignade.jpg" alt="Baignade">
-        <h3>Baignade</h3>
-        <p>Profitez d'une eau cristalline.</p>
-        <a href="#" class="btn-more">En savoir plus</a>
-      </article>
-
-    </section>
-  </main>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="footer-top">
-      <span>© 2026 Marchica Trips. Tous droits réservés.</span>
-      <div class="footer-legal">
-        <a href="#">Mentions légales</a>
-        <a href="#">Confidentialité</a>
-      </div>
-    </div>
-
-    <div class="footer-bottom">
-      <div class="footer-brand">
-        <h4>Marchica Trips</h4>
-        <p>Réservez votre prochaine activité avec confiance.</p>
-      </div>
-      <nav class="footer-nav">
-        <a href="#">Accueil</a>
-        <a href="#">Activités</a>
-        <a href="#">FAQ</a>
-        <a href="#">Réservation</a>
+  <body class="font-['Arial','Helvetica',sans-serif] bg-[#f3ead8] text-[#222]">
+    <!-- HEADER -->
+    <header
+      class="bg-[#1f4d44] flex justify-between items-center px-[50px] py-5 max-[800px]:flex-col max-[800px]:gap-[15px]"
+    >
+      <img
+        class="w-[60px] h-[60px] rounded-full bg-white object-cover"
+        src="images/logo.png"
+        alt="Logo Marchica Trips"
+      />
+      <nav
+        class="flex justify-center items-center gap-[60px] max-[800px]:gap-[25px]"
+      >
+        <a href="index.html" class="text-white font-bold text-[15px]">Accueil</a>
+        <a href="activity.html" class="text-white font-bold text-[15px]"
+          >Activités</a
+        >
+        <a href="faq.html" class="text-white font-bold text-[15px]">FAQ</a>
       </nav>
-    </div>
-  </footer>
+      <a
+        href="#"
+        class="bg-[#2e211a] text-white font-bold px-8 py-[14px] rounded-md"
+        >Réserver</a
+      >
+    </header>
 
-</body>
-</html>
-</body>
+    <main class="pb-[30px] flex flex-col items-center gap-5">
+      <!-- BANNIERE -->
+      <section class="w-full h-40 overflow-hidden bg-[#7aa6b3]">
+        <img
+          src="images/Vieo.jpg"
+          alt="Lagune de Marchica"
+          class="w-full h-full object-cover block"
+        />
+      </section>
+
+      <!-- CARTES -->
+      <section
+        class="w-full max-w-[1100px] px-5 flex flex-wrap justify-center gap-5"
+      >
+        <div
+          class="w-[23%] min-w-[220px] bg-[#f5f5f5] rounded-xl overflow-hidden pb-5 flex flex-col items-start max-[800px]:w-[45%]"
+        >
+          <img
+            src="images/kayak.jpg"
+            alt="Kayak"
+            class="w-full h-[130px] object-cover block bg-[#bbb]"
+          />
+          <h3 class="text-[15px] font-bold mt-[18px] mx-4 mb-1.5">Kayak</h3>
+          <p class="text-xs italic text-[#666] mx-4 mb-4 grow">
+            Explorez la lagune à votre rythme.
+          </p>
+          <a
+            href="#"
+            class="bg-[#6b6b6b] text-white text-xs font-bold px-[18px] py-2 rounded-[20px] ml-4"
+            >En savoir plus</a
+          >
+        </div>
+
+        <div
+          class="w-[23%] min-w-[220px] bg-[#f5f5f5] rounded-xl overflow-hidden pb-5 flex flex-col items-start max-[800px]:w-[45%]"
+        >
+          <img
+            src="images/bateau.jpg"
+            alt="Balade en bateau"
+            class="w-full h-[130px] object-cover block bg-[#bbb]"
+          />
+          <h3 class="text-[15px] font-bold mt-[18px] mx-4 mb-1.5">
+            Balade en bateau
+          </h3>
+          <p class="text-xs italic text-[#666] mx-4 mb-4 grow">
+            Admirez la lagune et ses îles.
+          </p>
+          <a
+            href="#"
+            class="bg-[#6b6b6b] text-white text-xs font-bold px-[18px] py-2 rounded-[20px] ml-4"
+            >En savoir plus</a
+          >
+        </div>
+
+        <div
+          class="w-[23%] min-w-[220px] bg-[#f5f5f5] rounded-xl overflow-hidden pb-5 flex flex-col items-start max-[800px]:w-[45%]"
+        >
+          <img
+            src="images/gourougou.jpg"
+            alt="Randonnée au Gourougou"
+            class="w-full h-[130px] object-cover block bg-[#bbb]"
+          />
+          <h3 class="text-[15px] font-bold mt-[18px] mx-4 mb-1.5">
+            Randonnée au Gourougou
+          </h3>
+          <p class="text-xs italic text-[#666] mx-4 mb-4 grow">
+            Un panorama exceptionnel sur la région.
+          </p>
+          <a
+            href="#"
+            class="bg-[#6b6b6b] text-white text-xs font-bold px-[18px] py-2 rounded-[20px] ml-4"
+            >En savoir plus</a
+          >
+        </div>
+
+        <div
+          class="w-[23%] min-w-[220px] bg-[#f5f5f5] rounded-xl overflow-hidden pb-5 flex flex-col items-start max-[800px]:w-[45%]"
+        >
+          <img
+            src="images/culinaire.jpg"
+            alt="Découverte culinaire"
+            class="w-full h-[130px] object-cover block bg-[#bbb]"
+          />
+          <h3 class="text-[15px] font-bold mt-[18px] mx-4 mb-1.5">
+            Découverte culinaire
+          </h3>
+          <p class="text-xs italic text-[#666] mx-4 mb-4 grow">
+            Savourez les spécialités locales.
+          </p>
+          <a
+            href="#"
+            class="bg-[#6b6b6b] text-white text-xs font-bold px-[18px] py-2 rounded-[20px] ml-4"
+            >En savoir plus</a
+          >
+        </div>
+
+        <div
+          class="w-[23%] min-w-[220px] bg-[#f5f5f5] rounded-xl overflow-hidden pb-5 flex flex-col items-start max-[800px]:w-[45%]"
+        >
+          <img
+            src="images/oiseaux.jpg"
+            alt="Observation des oiseaux"
+            class="w-full h-[130px] object-cover block bg-[#bbb]"
+          />
+          <h3 class="text-[15px] font-bold mt-[18px] mx-4 mb-1.5">
+            Observation des oiseaux
+          </h3>
+          <p class="text-xs italic text-[#666] mx-4 mb-4 grow">
+            Une faune et une flore préservées.
+          </p>
+          <a
+            href="#"
+            class="bg-[#6b6b6b] text-white text-xs font-bold px-[18px] py-2 rounded-[20px] ml-4"
+            >En savoir plus</a
+          >
+        </div>
+
+        <div
+          class="w-[23%] min-w-[220px] bg-[#f5f5f5] rounded-xl overflow-hidden pb-5 flex flex-col items-start max-[800px]:w-[45%]"
+        >
+          <img
+            src="images/peche.jpg"
+            alt="Pêche traditionnelle"
+            class="w-full h-[130px] object-cover block bg-[#bbb]"
+          />
+          <h3 class="text-[15px] font-bold mt-[18px] mx-4 mb-1.5">
+            Pêche traditionnelle
+          </h3>
+          <p class="text-xs italic text-[#666] mx-4 mb-4 grow">
+            Vivez une expérience locale authentique.
+          </p>
+          <a
+            href="#"
+            class="bg-[#6b6b6b] text-white text-xs font-bold px-[18px] py-2 rounded-[20px] ml-4"
+            >En savoir plus</a
+          >
+        </div>
+
+        <div
+          class="w-[23%] min-w-[220px] bg-[#f5f5f5] rounded-xl overflow-hidden pb-5 flex flex-col items-start max-[800px]:w-[45%]"
+        >
+          <img
+            src="images/nador.jpg"
+            alt="Visite de Nador"
+            class="w-full h-[130px] object-cover block bg-[#bbb]"
+          />
+          <h3 class="text-[15px] font-bold mt-[18px] mx-4 mb-1.5">
+            Visite de Nador
+          </h3>
+          <p class="text-xs italic text-[#666] mx-4 mb-4 grow">
+            Culture, histoire et patrimoine.
+          </p>
+          <a
+            href="#"
+            class="bg-[#6b6b6b] text-white text-xs font-bold px-[18px] py-2 rounded-[20px] ml-4"
+            >En savoir plus</a
+          >
+        </div>
+
+        <div
+          class="w-[23%] min-w-[220px] bg-[#f5f5f5] rounded-xl overflow-hidden pb-5 flex flex-col items-start max-[800px]:w-[45%]"
+        >
+          <img
+            src="images/baignade.jpg"
+            alt="Baignade"
+            class="w-full h-[130px] object-cover block bg-[#bbb]"
+          />
+          <h3 class="text-[15px] font-bold mt-[18px] mx-4 mb-1.5">Baignade</h3>
+          <p class="text-xs italic text-[#666] mx-4 mb-4 grow">
+            Profitez d'une eau cristalline.
+          </p>
+          <a
+            href="#"
+            class="bg-[#6b6b6b] text-white text-xs font-bold px-[18px] py-2 rounded-[20px] ml-4"
+            >En savoir plus</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer
+      class="bg-[#dcdcdc] px-[50px] py-[25px] flex flex-col gap-[25px] text-xs text-[#555] rounded-t-[20px]"
+    >
+      <div
+        class="flex justify-between items-center max-[800px]:flex-col max-[800px]:items-start max-[800px]:gap-[15px]"
+      >
+        <span>© 2026 Marchica Trips. Tous droits réservés.</span>
+        <div class="flex gap-[25px]">
+          <a href="#" class="text-[#555]">Mentions légales</a>
+          <a href="#" class="text-[#555]">Confidentialité</a>
+        </div>
+      </div>
+
+      <div
+        class="flex justify-between items-end max-[800px]:flex-col max-[800px]:items-start max-[800px]:gap-[15px]"
+      >
+        <div>
+          <h4 class="text-[#d9730d] text-[17px] font-bold mb-2">
+            Marchica Trips
+          </h4>
+          <p>Réservez votre prochaine activité avec confiance.</p>
+        </div>
+        <nav class="flex items-center gap-[30px]">
+          <a href="#" class="text-[#222] font-bold">Accueil</a>
+          <a href="#" class="text-[#222] font-bold">Activités</a>
+          <a href="#" class="text-[#222] font-bold">FAQ</a>
+          <a href="#" class="text-[#222] font-bold">Réservation</a>
+        </nav>
+      </div>
+    </footer>
+  </body>
 </html>
