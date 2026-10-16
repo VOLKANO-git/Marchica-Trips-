@@ -39,7 +39,7 @@ cd Marchica-Trips-
 Install the project dependencies:
 
 ```bash
-npm install
+npm install tailwindcss @tailwindcss/vite
 ```
 
 ## Development
